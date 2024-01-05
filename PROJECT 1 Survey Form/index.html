@@ -1,0 +1,98 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Your participation on this survey is greatly appreciated! :) </p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>First, a bit of your background?</legend>
+        <label for="name" id="name-label">Name
+          <input id="name" name="name" type="text" placeholder="Enter your name" required/>
+        </label>
+        <label for="email" id="email-label">Email
+          <input id="email" name="email" type="email" placeholder="Enter your email" required/>
+        </label>
+        <label for="number" id="number-label">Age
+          <input id="number" name="age" type="number" min="6" max="100" placeholder="your age" required/>
+        </label>
+        <label>What is your latest education level?
+          <select id="dropdown">
+            <option value="">(select an option)</option>
+            <option value="1">elementary</option>
+            <option value="2">junior/middle high school</option>
+            <option value="3">senior high school</option>
+            <option value="4">diploma/certificate program</option>
+            <option value="5">bachelor degree</option>
+            <option value="6">other</option>
+          </select>
+      </fieldset>
+      <fieldset>
+      <fieldset>
+        <legend>What's your favorite sports?</legend>
+        <label><input type="checkbox" name="favorite-sports" value="Football" class="inline"/> Football</label>
+        <label><input type="checkbox" name="favorite-sports" value="Basketball" class="inline"/> Basketball</label>
+        <label><input type="checkbox" name="favorite-sports" value="American Football" class="inline"/> American Football</ label>
+        <label><input type="checkbox" name="favorite-sports" value="Tennis" class="inline"/> Tennis</label>
+        <label><input type="checkbox" name="favorite-sports" value="Golf" class="inline"/> Golf</label>
+        <label><input type="checkbox" name="favorite-sports" value="Cricket" class="inline"/> Cricket</label>
+        <label><input type="checkbox" name="favorite-sports" value="Baseball" class="inline"/> Baseball</label>
+        <label><input type="checkbox" name="favorite-sports" value="Hockey" class="inline"/> Hockey</label>
+        <label><input type="checkbox" name="favorite-sports" value="Volleyball" class="inline"/> Volleyball</label>
+        <label><input type="checkbox" name="favorite-sports" value="Rugby" class="inline"/> Rugby</label>
+        <label for="custom-sports">Other sports (separate with commas):</label>
+        <textarea id="custom-sports" name="custom-sports" rows="1" cols="20" placeholder="Enter your own sports here (separate with commas)"></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Which sports do you prefer for exercise?</legend>
+        <label><input type="checkbox" name="preferred-sports" value="Running" class="inline"/> Running</label>
+        <label><input type="checkbox" name="preferred-sports" value="Cycling" class="inline"/> Cycling</label>
+        <label><input type="checkbox" name="preferred-sports" value="Swimming" class="inline"/> Swimming</label>
+        <label><input type="checkbox" name="preferred-sports" value="Yoga" class="inline"/> Yoga</label>
+        <label><input type="checkbox" name="preferred-sports" value="Pilates" class="inline"/> Pilates</label>
+        <label><input type="checkbox" name="preferred-sports" value="Weightlifting" class="inline"/> Weightlifting</label>
+        <label><input type="checkbox" name="preferred-sports" value="Crossfit" class="inline"/> Crossfit</label>
+        <label><input type="checkbox" name="preferred-sports" value="Dancing" class="inline"/> Dancing</label>
+        <label><input type="checkbox" name="preferred-sports" value="Martial Arts" class="inline"/> Martial Arts</label>
+        <label><input type="checkbox" name="preferred-sports" value="Hiking" class="inline"/> Hiking</label>
+        <label for="custom-sports">Other sports (separate with commas):</label>
+        <textarea id="custom-sports" name="custom-sports" rows="1" cols="20" placeholder="Enter your own sports here (separate with commas)"></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>How many times do you usually do sports/exercise?</legend>
+        <label for="regularly">
+          <input type="radio" id="regularly" name="frequency" value="regularly" checked class="inline"/>
+          Regularly (4-7 times per week)
+        </label>
+        <label for="often">
+          <input type="radio" id="often" name="frequency" value="often" class="inline"/>
+          Often (2-3 times per week)
+        </label> 
+        <label for="occasionally">
+          <input type="radio" id="occasionally" name="frequency" value="occasionally" class="inline"/>
+          Occasionally (1 time per week)
+        </label>
+        <label for="rarely">
+         <input type="radio" id="rarely" name="frequency" value="rarely" class="inline"/> 
+         Rarely (1-3 times per month)
+        </label> 
+        <label for="never">
+          <input type="radio" id="never" name="frequency" value="never" class="inline"/>
+          Never (Now's a great time to start :) )
+        </label >
+      </fieldset>
+      <fieldset>
+        <legend>What's your most unforgettable sports-related moment(s) you have ever experienced?</legend>
+        <label for="memorable-moment">
+          <textarea id="memorable-moment" name="memorable-moment" rows="4" cols="30" placeholder="Share your most memorable sports moment(s) here"></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
